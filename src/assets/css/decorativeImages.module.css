@@ -1,0 +1,9 @@
+.decorative__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 768px) {
+  .decorative__images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

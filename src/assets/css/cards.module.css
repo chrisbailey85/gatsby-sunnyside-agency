@@ -1,0 +1,14 @@
+.cards > div:first-child > div:first-child {
+  grid-column: 2/-1;
+}
+.cards > div:first-child > div:last-child {
+  grid-column: 1 / 2;
+  grid-row: 1/2;
+}
+
+@media (min-width: 768px) {
+  .underlay__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

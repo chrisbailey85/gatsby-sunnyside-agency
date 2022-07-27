@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+.card__img > * {
+  border-radius: 50%;
+  height: 50px;
+  aspect-ratio: 1;
+  margin-bottom: 2rem;
+}
+
+.card__text {
+  font-family: var(--barlow);
+}
+
+.testimonial {
+  color: var(--dark-grayish-blue);
+  margin-bottom: 2rem;
+}
+.user {
+  color: var(--very-dark-blue);
+  font-family: var(--fraunces);
+  font-weight: 900;
+}
+.user span {
+  display: block;
+  color: var(--grayish-blue);
+  font-family: var(--barlow);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
