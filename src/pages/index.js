@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Banner from "../components/banner"
+import Banner from "../components/Banner"
 import ServicesCards from "../components/ServicesCards"
 import Testimonials from "../components/Testimonials"
 import DecorativeImages from "../components/DecorativeImages"
