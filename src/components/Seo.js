@@ -1,7 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
-import { siteMetadata } from "../../gatsby-config"
 
 const query = graphql`
   {
@@ -15,7 +14,6 @@ const query = graphql`
 `
 const Seo = ({ title, description }) => {
   const { site } = useStaticQuery(query)
-  console.log(site.siteMetadata)
   return (
     <Helmet>
       <html lang="en" amp />

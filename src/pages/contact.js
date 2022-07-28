@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
-import Seo from "../components/SEO"
+import Seo from "../components/Seo"
 import DecorativeImages from "../components/DecorativeImages"
 export default function contact() {
   return (
