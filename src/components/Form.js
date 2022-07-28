@@ -1,25 +1,42 @@
-import React from "react"
-
+import React, { useState } from "react"
+import { form__btn } from "../assets/css/form.module.css"
 const Form = () => {
+  const [formInfo, updateFormInfo] = useState({
+    name: "",
+    email: "",
+    message: "",
+  })
+
+  function handleChange(e) {
+    const { name, value } = e.target
+    updateFormInfo(prevInfo => {
+      return {
+        ...prevInfo,
+        [name]: value,
+      }
+    })
+  }
+  function handleClick(e) {
+    e.preventDefault()
+  }
   return (
-    <form className="form">
-      <div className="form__group">
-        <label htmlFor="name" name="name">
-          Name:
-        </label>
+    <form>
+      <div>
+        <label htmlFor="name">Name:</label>
         <input
+          onChange={handleChange}
+          value={formInfo.name}
           type="text"
-          name="name"
+          placeholder="Please enter your name here"
           id="name"
-          placeholder="Please Enter your name here"
-          required
+          name="name"
         />
       </div>
-      <div className="form__group">
-        <label htmlFor="email" name="email">
-          Email:
-        </label>
+      <div>
+        <label htmlFor="email">Email:</label>
         <input
+          onChange={handleChange}
+          value={formInfo.email}
           type="text"
           name="email"
           id="email"
@@ -27,6 +44,20 @@ const Form = () => {
           required
         />
       </div>
+      <div>
+        <label htmlFor="message">Message:</label>
+        <textarea
+          onChange={handleChange}
+          value={formInfo.message}
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <button type="submit" onClick={handleClick} className={form__btn}>
+        submit
+      </button>
     </form>
   )
 }

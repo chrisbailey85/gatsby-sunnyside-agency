@@ -1,0 +1,8 @@
+.contact__heading {
+  color: var(--very-dark-blue);
+  font-size: 2rem;
+  font-family: var(--fraunces);
+  font-weight: 900;
+  text-align: center;
+  margin-top: 2rem;
+}
