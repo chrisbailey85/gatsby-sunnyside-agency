@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
-import Seo from "../components/Seo"
 import DecorativeImages from "../components/DecorativeImages"
+import Seo from "../components/Seo"
 export default function contact() {
   return (
     <Layout>

@@ -21,7 +21,7 @@ const Seo = ({ title, description }) => {
       <title>{title ? title : site.siteMetadata.title}</title>
       <meta
         name="description"
-        content={description ? description : siteMetadata.description}
+        content={description ? description : site.siteMetadata.description}
       />
     </Helmet>
   )
