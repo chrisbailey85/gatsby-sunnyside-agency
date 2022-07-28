@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Frontend Mentor | Sunnyside agency landing page",
-    description: "",
+    description: "Sunnyside agency the brightness agency around",
   },
   plugins: [
     `gatsby-plugin-image`,

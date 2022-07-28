@@ -43,6 +43,9 @@ const Navbar = () => {
         <div id="navigation" className={navOpen ? `${nav} ${open}` : `${nav}`}>
           <ul className={nav__list}>
             <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
               <Link to="/about">About</Link>
             </li>
             <li>
